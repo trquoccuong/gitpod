@@ -96,6 +96,7 @@ import { ErrorCodes } from "@gitpod/gitpod-protocol/lib/messaging/error";
 import { GithubUpgradeURL, PlanCoupon } from "@gitpod/gitpod-protocol/lib/payment-protocol";
 import {
     TeamSubscription,
+    TeamSubscription2,
     TeamSubscriptionSlot,
     TeamSubscriptionSlotResolved,
 } from "@gitpod/gitpod-protocol/lib/team-subscription-protocol";
@@ -1999,6 +2000,7 @@ export class GitpodServerImpl implements GitpodServerWithTracing, Disposable {
         }
         ctx.span?.setTag("teamId", invite.teamId);
         await this.teamDB.addMemberToTeam(user.id, invite.teamId);
+        await this.updateTeamSubscriptionQuantity(ctx, invite.teamId);
         const team = await this.teamDB.findTeamById(invite.teamId);
 
         this.analytics.track({
@@ -2032,6 +2034,7 @@ export class GitpodServerImpl implements GitpodServerWithTracing, Disposable {
         // Users are free to leave any team themselves, but only owners can remove others from their teams.
         await this.guardTeamOperation(teamId, user.id === userId ? "get" : "update");
         await this.teamDB.removeMemberFromTeam(userId, teamId);
+        await this.updateTeamSubscriptionQuantity(ctx, teamId);
         this.analytics.track({
             userId: user.id,
             event: "team_user_removed",
@@ -2157,6 +2160,7 @@ export class GitpodServerImpl implements GitpodServerWithTracing, Disposable {
             });
         });
 
+        // TODO(janx): If team paid plan, cancel it
         await this.teamDB.deleteTeam(teamId);
 
         return this.analytics.track({
@@ -2859,6 +2863,9 @@ export class GitpodServerImpl implements GitpodServerWithTracing, Disposable {
     async checkout(ctx: TraceContext, planId: string, planQuantity?: number): Promise<{}> {
         throw new ResponseError(ErrorCodes.SAAS_FEATURE, `Not implemented in this version`);
     }
+    async teamCheckout(ctx: TraceContext, teamId: string, planId: string): Promise<{}> {
+        throw new ResponseError(ErrorCodes.SAAS_FEATURE, `Not implemented in this version`);
+    }
     async getAvailableCoupons(ctx: TraceContext): Promise<PlanCoupon[]> {
         throw new ResponseError(ErrorCodes.SAAS_FEATURE, `Not implemented in this version`);
     }
@@ -2881,6 +2888,12 @@ export class GitpodServerImpl implements GitpodServerWithTracing, Disposable {
         throw new ResponseError(ErrorCodes.SAAS_FEATURE, `Not implemented in this version`);
     }
     async subscriptionCancelDowngrade(ctx: TraceContext, subscriptionId: string): Promise<void> {
+        throw new ResponseError(ErrorCodes.SAAS_FEATURE, `Not implemented in this version`);
+    }
+    async getTeamSubscription(ctx: TraceContext, teamId: string): Promise<TeamSubscription2 | undefined> {
+        throw new ResponseError(ErrorCodes.SAAS_FEATURE, `Not implemented in this version`);
+    }
+    protected async updateTeamSubscriptionQuantity(ctx: TraceContext, teamId: string): Promise<void> {
         throw new ResponseError(ErrorCodes.SAAS_FEATURE, `Not implemented in this version`);
     }
     async tsGet(ctx: TraceContext): Promise<TeamSubscription[]> {
