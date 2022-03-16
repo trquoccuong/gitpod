@@ -4,22 +4,18 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { useContext } from "react";
-import { AdminContext } from "../admin-context";
 import { PageWithSubMenu } from "../components/PageWithSubMenu";
 import { adminMenu } from "./admin-menu";
-import { UserContext } from "../user-context";
 
 export default function License() {
-    const { adminSettings, setAdminSettings } = useContext(AdminContext);
-    const { user } = useContext(UserContext);
-
     return (
         <div>
-            <PageWithSubMenu>
+            <PageWithSubMenu
                 subMenu={adminMenu}
                 title="License"
                 subtitle="License information of your account."
+            >
+            <h3>License creation</h3>
             </PageWithSubMenu>
         </div>
     );

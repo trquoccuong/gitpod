@@ -77,6 +77,7 @@ const AdminSettings = React.lazy(() => import(/* webpackPrefetch: true */ "./adm
 const ProjectsSearch = React.lazy(() => import(/* webpackPrefetch: true */ "./admin/ProjectsSearch"));
 const TeamsSearch = React.lazy(() => import(/* webpackPrefetch: true */ "./admin/TeamsSearch"));
 const OAuthClientApproval = React.lazy(() => import(/* webpackPrefetch: true */ "./OauthClientApproval"));
+const AdminLicense = React.lazy(() => import(/* webpackPrefetch: true */ "./admin/License"));
 
 function Loading() {
     return <></>;
@@ -345,6 +346,7 @@ function App() {
                     <Route path="/admin/workspaces" component={WorkspacesSearch} />
                     <Route path="/admin/settings" component={AdminSettings} />
                     <Route path="/admin/projects" component={ProjectsSearch} />
+                    <Route path="/admin/license" component={AdminLicense} />
 
                     <Route path={["/", "/login"]} exact>
                         <Redirect to={workspacesPathMain} />
