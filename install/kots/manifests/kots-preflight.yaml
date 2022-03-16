@@ -95,3 +95,10 @@ spec:
               message: The cluster must contain at least 4 cores
           - pass:
               message: There are at least 2 cores in the cluster
+    - customResourceDefinition:
+        customResourceDefinitionName: certificate.cert-manager.io
+        outcomes:
+          - fail:
+              message: Certificate CRD of Cert Manager was not found in the cluster. Please [install `cert-manager`](https://cert-manager.io/docs/installation/) to proceed.
+          - pass:
+              message: Cert Manager is installed and available.
