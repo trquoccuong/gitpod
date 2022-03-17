@@ -27,6 +27,7 @@ export default function License() {
                 {!!license && (
                 <>
                     <h3>license</h3>
+                    <p>test</p>
                     <h3>setLicense</h3>
                 </>
                 )}
