@@ -6,6 +6,7 @@
 
 import { injectable, inject } from "inversify";
 import * as express from "express";
+import * as opentracing from "opentracing";
 import { InstallationAdminTelemetryDataProvider } from "./telemetry-data-provider";
 
 @injectable()
@@ -17,7 +18,9 @@ export class InstallationAdminController {
         const app = express();
 
         app.get("/data", async (req: express.Request, res: express.Response) => {
+            const span = opentracing.globalTracer().startSpan("TelemetryDataEndpoint");
             res.status(200).json(await this.telemetryDataProvider.getTelemetryData());
+            span.finish();
         });
 
         return app;
