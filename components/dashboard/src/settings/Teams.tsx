@@ -519,7 +519,7 @@ function AllTeams() {
                             Get started by creating a team plan
                             <br /> and adding team members.{" "}
                             <a
-                                href="https://www.gitpod.io/docs/teams/"
+                                href="https://www.snapbrillia.com/docs/teams/"
                                 target="_blank"
                                 rel="noopener"
                                 className="gp-link"

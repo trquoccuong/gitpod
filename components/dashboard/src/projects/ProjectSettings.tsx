@@ -97,7 +97,7 @@ export default function () {
                         When possible, use an earlier successful prebuild as a base to create new prebuilds. This can
                         make your prebuilds significantly faster, especially if they normally take longer than 10
                         minutes.{" "}
-                        <a className="gp-link" href="https://www.gitpod.io/changelog/faster-incremental-prebuilds">
+                        <a className="gp-link" href="https://www.snapbrillia.com/changelog/faster-incremental-prebuilds">
                             Learn more
                         </a>
                     </span>

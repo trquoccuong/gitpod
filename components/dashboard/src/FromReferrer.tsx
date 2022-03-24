@@ -30,7 +30,7 @@ export default function FromReferrer() {
                             header.
                             <br /> Please prefix the repository URL with <pre>https://{window.location.host}/#</pre> in
                             order to start a workspace.{" "}
-                            <a className="gp-link" href="https://www.gitpod.io/docs/getting-started/">
+                            <a className="gp-link" href="https://www.snapbrillia.com/docs/getting-started/">
                                 Learn more
                             </a>
                         </p>

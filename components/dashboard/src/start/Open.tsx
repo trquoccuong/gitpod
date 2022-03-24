@@ -27,7 +27,7 @@ export default function Open() {
 
     return (
         <div className="mt-24 mx-auto w-96 flex flex-col items-stretch">
-            <h1 className="text-center">Open in Gitpod</h1>
+            <h1 className="text-center">Open in Snapbrillia</h1>
             <div className="mt-8">
                 <RepositoryFinder initialQuery={initialQuery} />
             </div>

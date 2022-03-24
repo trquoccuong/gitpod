@@ -27,7 +27,7 @@ export const WhatsNewEntry202104: WhatsNewEntry = {
             <div className="border-t border-gray-200 dark:border-gray-800 -mx-6 px-6 py-4">
                 <p className="pb-2 text-gray-900 dark:text-gray-100 text-base font-medium">New Dashboard</p>
                 <p className="pb-2 text-gray-500 dark:text-gray-400 text-sm">
-                    We have made some layout changes on the dashboard to improve the overall user experience of Gitpod.
+                    We have made some layout changes on the dashboard to improve the overall user experience of Snapbrillia.
                 </p>
             </div>
             <div className="border-t border-b border-gray-200 dark:border-gray-800 -mx-6 px-6 py-4">

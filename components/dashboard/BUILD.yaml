@@ -48,8 +48,8 @@ packages:
       metadata:
         helm-component: dashboard
       image:
-        - ${imageRepoBase}/dashboard:${version}
-        - ${imageRepoBase}/dashboard:commit-${__git_commit}
+        - ${imageRepoBase}/gitpod-dashboard:${version}
+        - ${imageRepoBase}/gitpod-dashboard:commit-${__git_commit}
 scripts:
   - name: telepresence
     script: |-

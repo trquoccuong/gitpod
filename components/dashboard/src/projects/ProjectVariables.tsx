@@ -175,7 +175,7 @@ function AddVariableModal(props: { project?: Project; onClose: () => void }) {
                 {!censored && (
                     <div className="mt-4">
                         <InfoBox>
-                            This variable will be visible to anyone who starts a Gitpod workspace for your repository.
+                            This variable will be visible to anyone who starts a Snapbrillia workspace for your repository.
                         </InfoBox>
                     </div>
                 )}

@@ -11,9 +11,9 @@ import { UserContext } from "./user-context";
 import { TeamsContext } from "./teams/teams-context";
 import { getGitpodService } from "./service/service";
 import { iconForAuthProvider, openAuthorizeWindow, simplifyProviderName, getSafeURLRedirect } from "./provider-utils";
-import gitpod from "./images/gitpod.svg";
-import gitpodDark from "./images/gitpod-dark.svg";
-import gitpodIcon from "./icons/gitpod.svg";
+import gitpod from "./images/snapbrillia_logo_white.svg";
+import gitpodDark from "./images/snapbrillia_logo_colored.svg";
+import gitpodIcon from "./icons/snapbrillia_icon.svg";
 import automate from "./images/welcome/automate.svg";
 import code from "./images/welcome/code.svg";
 import collaborate from "./images/welcome/collaborate.svg";
@@ -139,11 +139,11 @@ export function Login() {
                     <div id="feature-section-column" className="flex max-w-xl h-full mx-auto pt-6">
                         <div className="flex flex-col px-8 my-auto ml-auto">
                             <div className="mb-12">
-                                <img src={gitpod} className="h-8 block dark:hidden" alt="Gitpod light theme logo" />
-                                <img src={gitpodDark} className="h-8 hidden dark:block" alt="Gitpod dark theme logo" />
+                                <img src={gitpod} className="h-8 block dark:hidden" alt="Snapbrillia light theme logo" />
+                                <img src={gitpodDark} className="h-8 hidden dark:block" alt="Snapbrillia dark theme logo" />
                             </div>
                             <div className="mb-10">
-                                <h1 className="text-5xl mb-3">Welcome to Gitpod</h1>
+                                <h1 className="text-5xl mb-3">Welcome to Snapbrillia</h1>
                                 <div className="text-gray-400 text-lg">
                                     Spin up fresh, automated dev environments for each task in the cloud, in seconds.
                                 </div>
@@ -173,12 +173,12 @@ export function Login() {
                                 <img
                                     src={providerFromContext ? gitpod : gitpodIcon}
                                     className="h-14 mx-auto block dark:hidden"
-                                    alt="Gitpod's logo"
+                                    alt="Snapbrillia's logo"
                                 />
                                 <img
                                     src={providerFromContext ? gitpodDark : gitpodIcon}
                                     className="h-14 hidden mx-auto dark:block"
-                                    alt="Gitpod dark theme logo"
+                                    alt="Snapbrillia dark theme logo"
                                 />
                             </div>
 
@@ -192,7 +192,7 @@ export function Login() {
                                     </>
                                 ) : (
                                     <>
-                                        <h1 className="text-3xl">Log in{showWelcome ? "" : " to Gitpod"}</h1>
+                                        <h1 className="text-3xl">Log in{showWelcome ? "" : " to Snapbrillia"}</h1>
                                         <h2 className="uppercase text-sm text-gray-400">ALWAYS READY-TO-CODE</h2>
                                     </>
                                 )}
@@ -244,7 +244,7 @@ export function Login() {
                             <a
                                 className="gp-link hover:text-gray-600"
                                 target="gitpod-terms"
-                                href="https://www.gitpod.io/terms/"
+                                href="https://www.snapbrillia.com/terms/"
                             >
                                 terms of service
                             </a>{" "}
@@ -252,7 +252,7 @@ export function Login() {
                             <a
                                 className="gp-link hover:text-gray-600"
                                 target="gitpod-privacy"
-                                href="https://www.gitpod.io/privacy/"
+                                href="https://www.snapbrillia.com/privacy/"
                             >
                                 privacy policy
                             </a>

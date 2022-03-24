@@ -263,21 +263,21 @@ export default class CreateWorkspace extends React.Component<CreateWorkspaceProp
                         <p className="mt-14 text-base text-gray-400 flex space-x-2">
                             <a
                                 className="hover:text-blue-600 dark:hover:text-blue-400"
-                                href="https://www.gitpod.io/docs/"
+                                href="https://www.snapbrillia.com/docs/"
                             >
                                 Docs
                             </a>
                             <span>—</span>
                             <a
                                 className="hover:text-blue-600 dark:hover:text-blue-400"
-                                href="https://status.gitpod.io/"
+                                href="https://status.snapbrillia.com/"
                             >
                                 Status
                             </a>
                             <span>—</span>
                             <a
                                 className="hover:text-blue-600 dark:hover:text-blue-400"
-                                href="https://www.gitpod.io/blog/"
+                                href="https://www.snapbrillia.com/blog/"
                             >
                                 Blog
                             </a>
@@ -368,7 +368,7 @@ function RepositoryNotFoundView(p: { error: StartWorkspaceError }) {
                 setStatusMessage(
                     <div className="mt-2 flex flex-col space-y-8">
                         <p className="text-base text-gray-400 w-96">
-                            The repository may be private. Please authorize Gitpod to access to private repositories.
+                            The repository may be private. Please authorize Snapbrillia to access to private repositories.
                         </p>
                         <a className="mx-auto" href={authorizeURL}>
                             <button>Grant Access</button>
@@ -402,10 +402,10 @@ function RepositoryNotFoundView(p: { error: StartWorkspaceError }) {
                     <div className="mt-2 flex flex-col space-y-8">
                         <p className="text-base text-gray-400 w-96">
                             Permission to access private repositories has been granted. If you are a member of{" "}
-                            <CodeText>{owner}</CodeText>, please try to request access for Gitpod.
+                            <CodeText>{owner}</CodeText>, please try to request access for Snapbrillia.
                         </p>
                         <a className="mx-auto" href={authorizeURL}>
-                            <button>Request Access for Gitpod</button>
+                            <button>Request Access for Snapbrillia</button>
                         </a>
                     </div>,
                 );
@@ -415,7 +415,7 @@ function RepositoryNotFoundView(p: { error: StartWorkspaceError }) {
             setStatusMessage(
                 <div className="mt-2 flex flex-col space-y-8">
                     <p className="text-base text-gray-400 w-96">
-                        Your access token was updated recently. Please try again if the repository exists and Gitpod was
+                        Your access token was updated recently. Please try again if the repository exists and Snapbrillia was
                         approved for <CodeText>{owner}</CodeText>.
                     </p>
                     <a className="mx-auto" href={authorizeURL}>

@@ -724,7 +724,7 @@ export default function () {
                 <InfoBox className="w-2/3 mt-14 mx-auto">
                     If you are interested in purchasing a plan for a team, purchase a Team plan with one centralized
                     billing.{" "}
-                    <a className="underline" href="https://www.gitpod.io/docs/teams/">
+                    <a className="underline" href="https://www.snapbrillia.com/docs/teams/">
                         Learn more
                     </a>
                 </InfoBox>

@@ -198,7 +198,7 @@ export default function Preferences() {
                                     </a>{" "}
                                     ·{" "}
                                     <a
-                                        href="https://www.gitpod.io/docs/integrations/jetbrains"
+                                        href="https://www.snapbrillia.com/docs/integrations/jetbrains"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="gp-link"

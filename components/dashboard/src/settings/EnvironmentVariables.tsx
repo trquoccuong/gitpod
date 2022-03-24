@@ -265,7 +265,7 @@ export default function EnvVars() {
                             workspace creation URL.{" "}
                             <a
                                 className="gp-link"
-                                href="https://www.gitpod.io/docs/environment-variables/#using-the-account-settings"
+                                href="https://www.snapbrillia.com/docs/environment-variables/#using-the-account-settings"
                             >
                                 Learn more
                             </a>

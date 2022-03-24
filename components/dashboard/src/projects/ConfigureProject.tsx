@@ -356,7 +356,7 @@ export default function () {
                                     </h3>
                                     <p className="text-center text-base text-gray-500 dark:text-gray-400 mt-2 w-64">
                                         Edit the project configuration on the left to get started.{" "}
-                                        <a className="gp-link" href="https://www.gitpod.io/docs/config-gitpod-file/">
+                                        <a className="gp-link" href="https://www.snapbrillia.com/docs/config-gitpod-file/">
                                             Learn more
                                         </a>
                                     </p>

@@ -55,9 +55,9 @@ export default function Settings() {
                     title="Enable Service Ping"
                     desc={
                         <span>
-                            The following usage data is sent to provide insights on how you use your Gitpod instance, so
+                            The following usage data is sent to provide insights on how you use your Snapbrillia instance, so
                             we can provide a better overall experience.{" "}
-                            <a className="gp-link" href="https://www.gitpod.io/privacy">
+                            <a className="gp-link" href="https://www.snapbrillia.com/privacy">
                                 Read our Privacy Policy
                             </a>
                         </span>

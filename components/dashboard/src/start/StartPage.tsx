@@ -86,7 +86,7 @@ export function StartPage(props: StartPageProps) {
     const { phase, error } = props;
     let title = props.title || getPhaseTitle(phase, error);
     useEffect(() => {
-        document.title = "Starting — Gitpod";
+        document.title = "Starting — Snapbrillia";
     }, []);
     return (
         <div className="w-screen h-screen align-middle">
@@ -94,7 +94,7 @@ export function StartPage(props: StartPageProps) {
                 <div className="h-1/3"></div>
                 <img
                     src={gitpodIconUA}
-                    alt="Gitpod's logo"
+                    alt="Snapbrillia's logo"
                     className={`h-16 flex-shrink-0 ${
                         error || phase === StartPhase.Stopped || phase === StartPhase.IdeReady ? "" : "animate-bounce"
                     }`}

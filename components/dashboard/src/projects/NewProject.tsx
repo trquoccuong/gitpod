@@ -298,7 +298,7 @@ export default function NewProject() {
             return (
                 <p className="text-gray-500 text-center text-base">
                     Projects allow you to manage prebuilds and workspaces for your repository.{" "}
-                    <a href="https://www.gitpod.io/docs/teams-and-projects" rel="noopener" className="gp-link">
+                    <a href="https://www.snapbrillia.com/docs/teams-and-projects" rel="noopener" className="gp-link">
                         Learn more
                     </a>
                 </p>

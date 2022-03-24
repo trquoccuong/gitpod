@@ -680,10 +680,10 @@ export function GitIntegrationModal(
         let docsUrl = ``;
         switch (type) {
             case "GitHub":
-                docsUrl = `https://www.gitpod.io/docs/github-integration/#oauth-application`;
+                docsUrl = `https://www.snapbrillia.com/docs/github-integration/#oauth-application`;
                 break;
             case "GitLab":
-                docsUrl = `https://www.gitpod.io/docs/gitlab-integration/#oauth-application`;
+                docsUrl = `https://www.snapbrillia.com/docs/gitlab-integration/#oauth-application`;
                 break;
             default:
                 return undefined;

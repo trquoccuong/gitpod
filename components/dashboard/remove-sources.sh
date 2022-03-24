@@ -20,5 +20,5 @@ echo "BEWARE: This script actually modifies files in the source tree"
 rm public/google2db8c31aefd7ebbd.html
 # shellcheck disable=SC2044
 for i in $(find public/ -name "*.html"); do
-    sed -i '/<!-- Global site tag/,/gtag end/d' "$i";
+    sed -i '' '/<!-- Global site tag/,/gtag end/d' "$i";
 done

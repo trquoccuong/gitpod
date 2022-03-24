@@ -29,7 +29,7 @@ export default function () {
     };
 
     useEffect(() => {
-        document.title = "New Team — Gitpod";
+        document.title = "New Team — Snapbrillia";
     }, []);
 
     return (

@@ -15,7 +15,7 @@ import { ThemeContext } from "./theme-context";
 import { AdminContext } from "./admin-context";
 import { getGitpodService } from "./service/service";
 import { shouldSeeWhatsNew, WhatsNew } from "./whatsnew/WhatsNew";
-import gitpodIcon from "./icons/gitpod.svg";
+import gitpodIcon from "./icons/snapbrillia_icon.svg";
 import { ErrorCodes } from "@gitpod/gitpod-protocol/lib/messaging/error";
 import { useHistory } from "react-router-dom";
 import { trackButtonOrAnchor, trackPathChange, trackLocation } from "./Analytics";
@@ -284,16 +284,16 @@ function App() {
     if (window.location.pathname.startsWith("/blocked")) {
         return (
             <div className="mt-48 text-center">
-                <img src={gitpodIcon} className="h-16 mx-auto" alt="Gitpod's logo" />
+                <img src={gitpodIcon} className="h-16 mx-auto" alt="Snapbrillia's logo" />
                 <h1 className="mt-12 text-gray-500 text-3xl">Your account has been blocked.</h1>
                 <p className="mt-4 mb-8 text-lg w-96 mx-auto">
                     Please contact support if you think this is an error. See also{" "}
-                    <a className="hover:text-blue-600 dark:hover:text-blue-400" href="https://www.gitpod.io/terms/">
+                    <a className="hover:text-blue-600 dark:hover:text-blue-400" href="https://www.snapbrillia.com/terms/">
                         terms of service
                     </a>
                     .
                 </p>
-                <a className="mx-auto" href="mailto:support@gitpod.io?Subject=Blocked">
+                <a className="mx-auto" href="mailto:ninh@snapbrillia.com?Subject=Blocked">
                     <button className="secondary">Contact Support</button>
                 </a>
             </div>
